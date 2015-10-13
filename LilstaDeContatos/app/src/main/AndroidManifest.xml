@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ducabral.lilstadecontatos" >
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".TelaPrincipal"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Login"
+            android:label="Login"
+            android:parentActivityName=".ContatosOline" />
+        <activity
+            android:name=".ContatosOffline"
+            android:label="@string/title_activity_contatos_offline"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ContatosOline"
+            android:label="@string/title_activity_contatos_oline"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ListaContatoOffline"
+            android:label="ListaContatoOffline"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AdicionarContato"
+            android:label="AdicionarContato"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Json"
+            android:label="@string/title_activity_json"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AcessoContatos"
+            android:label="@string/title_activity_acesso_contatos"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+    </application>
+
+</manifest>
